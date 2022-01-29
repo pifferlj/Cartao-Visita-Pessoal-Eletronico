@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Some basic CSS overrides */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060606;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* End basic CSS override */
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  width: 100%;
+  max-width: 300px;
+  background-color: #1b2028;
+  border-radius: 46px;
+  position: relative;
+  border: 5px solid transparent;
+  background-clip: padding-box;
+  text-align: center;
+  color: #7d8396;
+  background-image: linear-gradient(
+    135deg,
+    rgba(53, 197, 241, 0.35),
+    rgba(115, 74, 88, 0.1) 15%,
+    #1b2028 20%,
+    #1b2028 100%
+  );
+}
+.profile:after {
+  content: '';
+  display: block;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  z-index: -1;
+  position: absolute;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    135deg,
+    #05eef6,
+    #0e7b8f 20%,
+    #1b2028 30%,
+    #2c333e 100%
+  );
+}
+
+.profile-image {
+  border-radius: 40%;
+  overflow: hidden;
+  width: 135px;
+  height: 135px;
+  position: relative;
+}
+.profile-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.profile-username {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.profile-user-handle {
+  color: #7d8396;
+}
+
+.profile-links {
+  margin-top: 5.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #05eef6;
+  margin-left: 0.175rem;
+  margin-right: 0.175rem;
+}
+.link i {
+  font-size: 1.5em;
+}
